@@ -32,9 +32,13 @@ use_mcell_ran4()
 mcell_ran4_init()
 
 rsec = new Random()
+rsec.Random123()
 rsec.uniform(0, 1)
 
-for i = 0, 1 rcomp[i] = new Random()
+for i = 0, 1 {
+rcomp[i] = new Random()
+rcomp[i].Random123()
+}
 rcomp[0].uniform(0, numapical - 1)
 
 /* distribuzione synapsi prossimali */
